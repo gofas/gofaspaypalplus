@@ -6,7 +6,7 @@
  * @copyright	2017 https://gofas.net
  * @license		https://gofas.net/?p=9340
  * @support		https://gofas.net/?p=7858
- * @version		1.2.1
+ * @version		2.0.0
  */
  
 // Configuações
@@ -16,14 +16,6 @@ function gofaspaypalplus_config() {
 		'FriendlyName' => array(
 			'Type' => 'System',
 			'Value' => 'Gofas PayPal Plus',
-		),
-		// License Key
-		'license_key' => array(
-			'FriendlyName' => 'Chave de Licença',
-			'Type' => 'text',
-			'Size' => '60',
-			'Default' => '',
-			'Description' => 'Insira sua chave de licença fornecida no momento da aquisição do módulo.',
 		),
 			
 		// Client ID Live
@@ -113,7 +105,7 @@ function gofaspaypalplus_config() {
 		// Crédito
 		'credits' => array(
 			'Description' => '<div style="background: #dde9f9; padding: 15px 15px;">
-			<p>&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | Versão 1.2.1 | <a target="_blank" href="https://gofas.net/?p=8294">Documentação</a> | <a target="_blank" href="https://gofas.net/?p=7858">Suporte</a></p>			
+			<p>&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | Versão 2.0.0 | <a target="_blank" href="https://gofas.net/?p=8294">Documentação</a> | <a target="_blank" href="https://gofas.net/?p=7858">Suporte</a></p>			
 			</div>',
 		),
 	);

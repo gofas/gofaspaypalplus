@@ -6,7 +6,7 @@
  * @copyright	2017 https://gofas.net
  * @license		https://gofas.net/?p=9340
  * @support		https://gofas.net/?p=7858
- * @version		1.2.1
+ * @version		2.0.0
  */
 
 // Require libraries needed for gateway module functions.
@@ -14,48 +14,6 @@ require_once __DIR__ . '/../../../init.php';
 require_once __DIR__ . '/../../../includes/gatewayfunctions.php';
 require_once __DIR__ . '/../../../includes/invoicefunctions.php';
 use Illuminate\Database\Capsule\Manager as Capsule;
-
-/**
- *
- * Receive Start
- *
- */
-
-if( $_POST['status'] and $_POST['action'] and $_POST['hash'] ) {
- 	// Get license_key
-	foreach( Capsule::table('tblpaymentgateways') -> where('gateway', '=', 'gofaspaypalplus') -> get( array( 'setting', 'value') ) as $settings ) {
-		$setting_key				= $settings->setting;
-		$setting["$setting_key"]	= $settings->value;
-	}
-	$license_key					= $setting['license_key'];
-	$secret_key			= 'H5Ke7mmArYussbcBdZt4yoEiBhQBB8'; // PayPal Plus
-	$hash_composition	= 'Jka90skmLSm0838nAM5a4pQ89B'.$license_key.$secret_key;
-	$local_hash			= sha1( $hash_composition );
-	$post_status		= $_POST['status'];
-	$post_action		= $_POST['action'];
-	$post_hash			= $_POST['hash'];
-	if ( $post_status === 's' and $post_action === 'e' and $local_hash === $post_hash ) {
-		try {
-			Capsule::table('tblconfiguration')->
-			where( 'setting', 'gppplocalkey')->
-			update(array('value' => 'e', 'created_at' =>  $local_key_created_at , 'updated_at' => date("Y-m-d H:i:s")));		
-			echo 'e';
-		}
-		catch (\Exception $e) {
-    		echo $e->getMessage();
-		}
-	}
-	else {
-		echo '!e';
-	}
-}
-unset($secret_key);
-/**
- *
- * Receive End
- *
- */
-
 
 // Puxa parâmetros de configuração do gateway
 $params			= getGatewayVariables('gofaspaypalplus');

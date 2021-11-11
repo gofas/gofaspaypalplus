@@ -5,7 +5,7 @@
  * @copyright	2017 https://gofas.net
  * @license		https://gofas.net/?p=9340
  * @support		https://gofas.net/?p=7858
- * @version		1.2.1
+ * @version		2.0.0
  */
  
 // IE and others compatible event handler

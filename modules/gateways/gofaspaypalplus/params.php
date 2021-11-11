@@ -36,8 +36,6 @@ $experience_profile = '{
 		}
 	}';
 	
-// Parametros da configuração do Gateway
-$license_key			= $params['license_key'];
 $sandbox				= $params['sandboxmode'];
 if ($sandbox) {
 	$client_id			= $params['clientidsandbox'];
