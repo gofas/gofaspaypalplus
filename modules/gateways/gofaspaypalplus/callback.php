@@ -13,6 +13,7 @@
 require_once __DIR__ . '/../../../init.php';
 require_once __DIR__ . '/../../../includes/gatewayfunctions.php';
 require_once __DIR__ . '/../../../includes/invoicefunctions.php';
+require_once __DIR__ . '/functions.php';
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 // Puxa parâmetros de configuração do gateway
@@ -270,6 +271,7 @@ if ( !empty( $raw_post_array['id'] ) and !empty( $raw_post_array['links']['0']['
 			$v_parent_payment_fee, // Payment Fee
 			$params['paymentmethod']
 		);
+		$gppp_update_stats = gppp_update_stats($whmcsAdmin, $sandbox);
 				
 	}
 	

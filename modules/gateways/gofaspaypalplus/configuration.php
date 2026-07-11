@@ -11,6 +11,9 @@
  
 // Configuações
 function gofaspaypalplus_config() {
+	require_once __DIR__.'/functions.php';
+	// Telemetria: checagem de versão / contabilização de instalação ativa (throttled a 1x por dia, sempre identificado)
+	$gppp_verify = gppp_verify_throttled();
 	return array(
 		// Nome de exibição amigável para o gateway
 		'FriendlyName' => array(
@@ -103,9 +106,16 @@ function gofaspaypalplus_config() {
 			'Description' => '<br/>Insira o URL da imagem que será usada como botão "Finalizar Pagamento" (tamanho recomendado: entre 160x40px e 339x40px).',
 		),
 		// Crédito
+		// Consentimento opt-in para envio de estatisticas de uso (action=charge)
+		'consent_stats' => array(
+			'FriendlyName' => 'Enviar estatísticas de uso (opcional)',
+			'Type' => 'yesno',
+			'Default' => 'no',
+			'Description' => 'Opcional. Controla o envio identificado das estatísticas de confirmação de pagamento. Marcado: as confirmações são enviadas à Gofas identificadas pela URL do WHMCS, versão do módulo, versão do WHMCS, versão do PHP, email e nome do administrador. Desmarcado: as confirmações de pagamento continuam sendo contabilizadas, porém de forma anônima, sem URL nem identificação do administrador. Em ambos os casos, a verificação de novas versões do módulo envia a URL do WHMCS e o contato do administrador para notificar atualizações e contabilizar a instalação como ativa.',
+		),
 		'credits' => array(
 			'Description' => '<div style="background: #dde9f9; padding: 15px 15px;">
-			<p>&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | Versão 2.0.0 | <a target="_blank" href="https://gofas.net/?p=8294">Documentação</a> | <a target="_blank" href="https://gofas.net/?p=7858">Suporte</a></p>			
+			<p>&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | Versão 2.1.0 | <a target="_blank" href="https://gofas.net/?p=8294">Documentação</a> | <a target="_blank" href="https://gofas.net/?p=7858">Suporte</a></p>			
 			</div>',
 		),
 	);
