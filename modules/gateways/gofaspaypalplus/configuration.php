@@ -6,7 +6,7 @@
  * @copyright	2017 https://gofas.net
  * @license		https://gofas.net/?p=9340
  * @support		https://gofas.net/?p=7858
- * @version		2.1.0
+ * @version		2.2.0
  */
  
 // Configuações
@@ -115,7 +115,7 @@ function gofaspaypalplus_config() {
 		),
 		'credits' => array(
 			'Description' => '<div style="background: #dde9f9; padding: 15px 15px;">
-			<p>&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | Versão 2.1.0 | <a target="_blank" href="https://gofas.net/?p=8294">Documentação</a> | <a target="_blank" href="https://gofas.net/?p=7858">Suporte</a></p>			
+			<p>&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | Versão 2.2.0 | <a target="_blank" href="https://gofas.net/?p=8294">Documentação</a> | <a target="_blank" href="https://gofas.net/?p=7858">Suporte</a></p>			
 			</div>',
 		),
 	);

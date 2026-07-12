@@ -6,7 +6,7 @@
  * @copyright	2017 https://gofas.net
  * @license		https://gofas.net/?p=9340
  * @support		https://gofas.net/?p=7858
- * @version		1.2.0
+ * @version		2.2.0
  */
 
 if(!defined('WHMCS')) { die('Esse arquivo não pode ser acessado diretamente'); }
@@ -15,7 +15,7 @@ use WHMCS\Database\Capsule;
 // Telemetria: checagem de versão (sempre identificado) e confirmação de pagamento (gated por consentimento)
 if(!function_exists('gppp_module_version')){
 	function gppp_module_version(){
-		return '2.1.0';
+		return '2.2.0';
 	}
 }
 if(!function_exists('gppp_whmcs_url')){
