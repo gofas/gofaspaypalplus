@@ -1,12 +1,28 @@
 # Módulo PayPal Plus para WHMCS
 
+[![versão](https://img.shields.io/github/v/release/gofas/gofaspaypalplus?label=vers%C3%A3o&color=005071&style=flat-square)](https://github.com/gofas/gofaspaypalplus/releases/latest)
+[![downloads](https://img.shields.io/github/downloads/gofas/gofaspaypalplus/total?label=downloads&color=005071&style=flat-square)](https://github.com/gofas/gofaspaypalplus/releases/latest)
+[![licença](https://img.shields.io/badge/licen%C3%A7a-propriet%C3%A1ria-005071?style=flat-square)](https://gofas.net/contrato-de-venda-de-licenca-de-uso-de-software/)
+[![suporte](https://img.shields.io/badge/suporte-f%C3%B3rum%20gratuito-ff8700?style=flat-square)](https://gofas.net/foruns/)
+
 Integra o checkout transparente do PayPal diretamente na fatura do WHMCS, sem redirecionar o cliente para fora do seu site. Desenvolvido pela Gofas Software, é 100% gratuito e de código aberto.
+
+## Sumário
+
+- [Download](#download)
+- [Funcionalidades](#funcionalidades)
+- [Requisitos](#requisitos)
+- [Instalação](#instalação)
+- [Configuração](#configuração)
+- [Informações importantes](#informações-importantes)
+- [Suporte](#suporte)
+- [Licença](#licença)
 
 ## Download
 
-Baixe a versão mais recente:
+**[Baixar a versão mais recente](https://github.com/gofas/gofaspaypalplus/releases/latest/download/gofaspaypalplus.zip)**
 
-https://github.com/gofas/gofaspaypalplus/releases/latest/download/gofaspaypalplus.zip
+O download é contabilizado no site pelo contador de instalações do módulo.
 
 ## Funcionalidades
 
@@ -39,7 +55,7 @@ Crie um aplicativo REST API no painel de desenvolvedor do PayPal (https://develo
 
 ### Opções do módulo
 
-<img src="https://raw.githubusercontent.com/gofas/gofaspaypalplus/master/docs/img/tela-configuracoes-modulo.png" alt="Tela de configuracoes do modulo" width="640">
+<img src="https://raw.githubusercontent.com/gofas/gofaspaypalplus/master/docs/img/tela-configuracoes-modulo-2.2.0.png" alt="Tela de configuracoes do modulo" width="640">
 
 - **Live Client ID** e **Live Client Secret**: credenciais de produção do aplicativo.
 - **Sandbox Client ID** e **Sandbox Client Secret**: credenciais do ambiente de testes.
