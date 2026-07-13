@@ -5,6 +5,7 @@
 
 **Melhorias:**
 
+- readme: contador do site, captura sem aviso de hook e secao de licenca - [#6](https://github.com/gofas/gofaspaypalplus/issues/6)
 - readme: captura versionada, badges e sumario - [#5](https://github.com/gofas/gofaspaypalplus/issues/5)
 - readme: conteudo da pagina do site transferido e captura de configuracao - [#4](https://github.com/gofas/gofaspaypalplus/issues/4)
 
