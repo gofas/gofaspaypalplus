@@ -1,6 +1,6 @@
 # Contrato de venda de licença de uso de software
 
-Gofas Software. Versão vigente publicada em <https://gofas.net/contrato-de-venda-de-licenca-de-uso-de-software/>.
+Gofas Software. Versão vigente publicada em <https://gofas.net/?p=9340>.
 
 Todas as licenças de uso de software de todos os nossos softwares, gratuitos ou pagos, é regido pelas cláusulas determinadas nesse documento, servindo de adendo a página de apresentação de cada software no nosso site, que são as únicas outras informações que podem ser adicionadas ou podem interferir nos termos desse contrato. Se você possui ou usa um software desenvolvido pela Gofas Software, consequentemente você deve ter esse contrato como base de direitos e deveres.
 
