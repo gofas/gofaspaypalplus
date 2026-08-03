@@ -75,4 +75,4 @@ Crie um aplicativo REST API no painel de desenvolvedor do PayPal (https://develo
 
 ## Licença
 
-[Contrato de licença de uso](https://gofas.net/contrato-de-venda-de-licenca-de-uso-de-software/)
+[Contrato de licença de uso](https://gofas.net/?p=9340)
